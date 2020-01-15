@@ -120,6 +120,7 @@ p a:hover {
 	color:#fff!important;
 }
 /*------------------------- Body ---------------------------*/
+
 #body {
 	background:none #000;
 	margin-top:21px!important;
@@ -664,7 +665,7 @@ p a:hover {
 #body.about div div:first-child {
 	border-left:0;
 	border-top:0;
-	width:479px;
+	width:1000px;
 }
 #body.about div div:first-child h3 {
 	color:#fff;
@@ -676,10 +677,11 @@ p a:hover {
 }
 #body.about div div:first-child p {
 	color:#a5a5a5;
-	font-size:12px;
+	font-size: 16px;
 	line-height:18px;
 	margin:0;
 	padding:0 20px;
+	
 }
 #body.about div div {
 	border-left:1px solid #4F4F4F;
