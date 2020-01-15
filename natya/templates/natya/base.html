@@ -11,12 +11,12 @@
 <body>
 	<div id="header">
 		<div>
-			<a href="home.html" id="logo"><img src="{% static 'natya/images/title2.png' %}" alt=""></a>
+			<a href="home.html" id="logo"><img src="{% static 'natya/images/logo2.png' %}" alt=""></a>
 			<ul>
 				<li>
 					<a href="http://127.0.0.1:8000/home/">Home</a>
                 </li>
-                <li class="selected">
+                <li >
                     <a href="http://127.0.0.1:8000/home/about/">About</a>
                 </li>
 				<li>
@@ -42,7 +42,7 @@
 				<li>
 					<a href="http://127.0.0.1:8000/login/">Login</a>
 				</li>
-				<li>
+				<li class="selected">
 					<a href="http://127.0.0.1:8000/register/">Register</a>
 				</li>
 				{% endif %}
