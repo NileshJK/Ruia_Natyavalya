@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    #image = models.ImageField(default='default.jpg',upload_to='_profile_pics')
+    Upload_File = models.FileField()
 
     def __str__(self):
-        return f'{self.user} Profile Created'
+        return f'{self.user} Profile'
