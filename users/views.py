@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .forms import UserRegisterForm
+from .forms import UserRegisterForm       
 
 # Create your views here.
 def register(request):
@@ -10,9 +10,9 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created {username}')
+           # messages.success(request, f'Account created {username}')
            # No message
-            #messages.success(request,'Your has account been created! You are now able to log in{}'.format(username))
+            messages.success(request,f'Your has account been created {username}! You are now able to log in')
             return redirect('login')
     else:    
         form =UserRegisterForm()
